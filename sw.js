@@ -12,11 +12,13 @@ const APP_SHEEL = [
     'index.html',
     'css/style.css',
     'img/favicon.ico',
-    'img/avatars/hulk.jpg',
-    'img/avatars/ironman.jpg',
-    'img/avatars/spiderman.jpg',
-    'img/avatars/thor.jpg',
+    'img/avatars/deadpool.jpg',
+    'img/avatars/venom.jpg',
+    'img/avatars/carnage.jpg',
+    'img/avatars/punisher.jpg',
     'img/avatars/wolverine.jpg',
+    'img/avatars/ghostrider.jpg',
+    'img/avatars/greengoblin.jpg',
     'js/app.js',
     'js/sw-utils.js'
 ];
