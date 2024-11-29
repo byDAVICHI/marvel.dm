@@ -1,11 +1,11 @@
 //sw producción 
 var url = window.location.href;
-var swLocation= 'sw.js';
+var swLocation= '/sw.js';
 
 //Agregar bloque 1 
 if(navigator.serviceWorker){
     if(url.includes('localhost')){
-        swLocation='sw.js'
+        swLocation='/sw.js'
     }
     navigator.serviceWorker.register('swLocation');
 }
