@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Demo APP</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Quicksand:300,400' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+
+    <link rel="shortcut icon" type="image/ico" href="img/favicon.ico"/>
+
+    <link rel="manifest" href="/manifest.json">
+
+    <meta name="theme-color" content="#3498db">
+
+</head>
+<body>
+        <!-- Titulo -->
+        <span class="first"> 
+            <span id="salir-btn" class="fa fa-sign-out-alt out oculto animated fadeIn"></span>
+            <span id="titulo">Seleccione Personaje
+                <i class="fa fa-user"></i>
+            </span>
+            <span id="nuevo-btn" class="fa fa-pen-square new oculto animated fadeIn fast"></span>
+        </span>
+        <!-- Fin Titulo -->
+
+        <!-- Modal -->
+        <div id="modal" class="oculto">
+            <img id="modal-avatar" src="img/avatars/spiderman.jpg">
+
+            <span class="first"> 
+                <span id="titulo-modal">Nuevo mensaje</span>
+                <span id="cancel-btn" class="fa fa-times"></span>
+            </span>
+            
+
+            <div class="nuevo-mensaje">
+                <textarea id="txtMensaje" placeholder="Nuevo mensaje..." rows="5"></textarea>
+            </div>
+
+            
+            <!-- boton de enviar -->
+
+            <div id="post-btn" class="fab">
+                <i class="fa fa-paper-plane"></i>
+            </div>
+
+            <div id="post-btn" class="fab-marker">
+                <i class="fa fa-map-marker-alt"></i>
+            </div>
+
+            <div id="post-btn" class="fab-photo">
+                <i class="fa fa-image"></i>
+            </div>
+
+        </div>
+        <!-- Fin Modal -->
+
+
+        <!-- Seleccion de personaje -->
+        <div id="seleccion" class="seleccion animated fadeIn fast" align="center">
+        
+            <img data-user="venom" src="img/avatars/venom.jpg" alt="VENOM" class="seleccion-avatar">
+            <img data-user="punisher" src="img/avatars/punisher.jpg" alt="PUNISHER" class="seleccion-avatar">
+            <img data-user="ghostrider" src="img/avatars/ghostrider.jpg" alt="GHOST RIDER" class="seleccion-avatar">
+            <img data-user="wolverine" src="img/avatars/wolverine.jpg" alt="WOLVERINE" class="seleccion-avatar">
+            <img data-user="deadpool" src="img/avatars/deadpool.jpg" alt="DEADPOOL" class="seleccion-avatar">
+            <img data-user="greengoblin" src="img/avatars/greengoblin.jpg" alt="GREEN GOBLIN" class="seleccion-avatar">
+            <img data-user="carnage" src="img/avatars/carnage.jpg" alt="CARNAGE" class="seleccion-avatar">
+
+        </div>
+
+        <!-- FIN Seleccion de personaje -->
+
+        <!-- Lista de mensajes -->
+        <ul id="timeline" class="timeline oculto">
+            
+            <!-- Mensaje -->
+            <li class="animated fadeIn fast">
+                <div class="avatar">
+                    <img src="img/avatars/venom.jpg">
+                </div>
+                <div class="bubble-container">
+                    <div class="bubble">
+                        <h3>@spiderman</h3>
+                        <br/>
+                        Mi demo de PWA
+                    </div>
+                    
+                    <div class="arrow"></div>
+                </div>
+            </li>
+            <!-- Fin del mensaje -->
+
+        </ul>
+        <!-- Fin Lista de mensajes -->
+
+
+      
+    
+        <script src="js/libs/jquery.js"></script>
+        <script src="js/app.js"></script>
+    
+</body>
+</html>
